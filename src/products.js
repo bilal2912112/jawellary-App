@@ -8,6 +8,7 @@ const products = [
     Vendor: "Supply Dark",
     Type: "Earrings",
     Tags: "Rose Gold",
+    countInStock: 2,
     rating: 12,
     numReveiws: 3,
     price: "10$",
@@ -22,6 +23,7 @@ const products = [
       '<div class="product-description rte" itemprop="description">Sed in metus nec dui consequat vestibulum. In varius pretium nunc, sed bibendum mauris lacinia non. Praesent vel neque ut ligula porttitor vestibulum ac eu erat. Pellentesque quis turpis odio. Etiam auctor laoreet ligula, vel aliquam urna ornare sed. Praesent laoreet diam vitae lectus molestie pulvinar.</div>\n<div class="product-description rte" itemprop="description">\n<ul>\n<li><span>Nullam blandit</span></li>\n<li><span>Vestibulum euismod</span></li>\n<li><span>Nullam venenatis </span></li>\n<li><span>Aenean a magna eros</span></li>\n</ul>\n</div>',
     Vendor: "Supply Dark",
     Type: "Earrings",
+    countInStock: 3,
     Tags: "Rose Gold",
     rating: 12,
     numReveiws: 4,
@@ -36,6 +38,7 @@ const products = [
     "Body (HTML)":
       '<div class="product-description rte" itemprop="description">Sed in metus nec dui consequat vestibulum. In varius pretium nunc, sed bibendum mauris lacinia non. Praesent vel neque ut ligula porttitor vestibulum ac eu erat. Pellentesque quis turpis odio. Etiam auctor laoreet ligula, vel aliquam urna ornare sed. Praesent laoreet diam vitae lectus molestie pulvinar.</div>\n<div class="product-description rte" itemprop="description">\n<ul>\n<li><span>Nullam blandit</span></li>\n<li><span>Vestibulum euismod</span></li>\n<li><span>Nullam venenatis </span></li>\n<li><span>Aenean a magna eros</span></li>\n</ul>\n</div>',
     Vendor: "Supply Dark",
+    countInStock: 1,
     Type: "Earrings",
     Tags: "Rose Gold",
     rating: 12,
@@ -54,6 +57,7 @@ const products = [
     Type: "Earrings",
     Tags: "White Gold",
     rating: 12,
+    countInStock: 0,
     numReveiws: 6,
     price: "80$",
     Image:
@@ -69,6 +73,7 @@ const products = [
     Type: "Earrings",
     Tags: "White Gold",
     rating: 12,
+    countInStock: 10,
     numReveiws: 10,
     price: "30$",
     Image:
@@ -84,6 +89,7 @@ const products = [
     Type: "Earrings",
     Tags: "Rose Gold",
     rating: 12,
+    countInStock: 2,
     numReveiws: 11,
     price: "10$",
     Image:
@@ -97,6 +103,9 @@ const products = [
     Vendor: "",
     Type: "",
     Tags: "",
+    rating: 12,
+    countInStock: 2,
+    numReveiws: 3,
     price: "120$",
     Image:
       "https://cdn.shopify.com/s/files/1/0597/2185/products/18k-rose-gold-infinite-link-earrings---3_d6c3d6dc-ebd4-480c-be8a-fa7422e672d2.jpg?v=1406749600",
@@ -107,6 +116,7 @@ const products = [
     Title: "14k Dangling Pendant Earrings",
     "Body (HTML)": "",
     Vendor: "",
+    countInStock: 5,
     Type: "",
     Tags: "",
     rating: 12,
@@ -123,6 +133,7 @@ const products = [
     Vendor: "",
     Type: "",
     Tags: "",
+    countInStock: 1,
     rating: 12,
     numReveiws: 5,
     price: "100$",
