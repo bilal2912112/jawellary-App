@@ -104,7 +104,7 @@ const products = [
     Type: "",
     Tags: "",
     rating: 12,
-    countInStock: 2,
+    countInStock: 0,
     numReveiws: 3,
     price: "120$",
     Image:
