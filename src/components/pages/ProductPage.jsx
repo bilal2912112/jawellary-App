@@ -21,7 +21,6 @@ const ProductPage = () => {
   }, [dispatch, id]);
   const addToCartHandler = ({ props }) => {
     navigate(`/cart/${id}?qty=${qty}`);
-    console.log("add to cart", id);
   };
   return (
     <div>
