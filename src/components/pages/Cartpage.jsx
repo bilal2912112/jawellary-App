@@ -11,12 +11,12 @@ import {
   Card,
 } from "react-bootstrap";
 import Message from "../Message";
-import { addToCart } from "../../actions/cartActions";
+import { addToCart, removeFromCart } from "../../actions/cartActions";
 
 const Cartpage = () => {
   const { id } = useParams();
   const location = useLocation();
-  const { history } = useNavigate();
+  const navigate = useNavigate();
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
@@ -29,6 +29,10 @@ const Cartpage = () => {
   }, [dispatch, id, qty]);
   const removeFromCartHandler = (id) => {
     console.log(`product id ${id}`);
+    dispatch(removeFromCart(id));
+  };
+  const checkoutHandler = () => {
+    navigate(`/login?redirect=shipping`);
   };
   return (
     <Row>
@@ -96,6 +100,16 @@ const Cartpage = () => {
                 .toFixed(2)}
             </ListGroup.Item>
           </ListGroup>
+          <ListGroup.Item>
+            <Button
+              type="button"
+              className="d-grid gap-2 my-3 mx-5  px-5 "
+              disabled={cartItems.length === 0}
+              onClick={checkoutHandler}
+            >
+              Proceed To CheckOut
+            </Button>
+          </ListGroup.Item>
         </Card>
       </Col>
     </Row>
