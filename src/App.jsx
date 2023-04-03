@@ -8,6 +8,7 @@ import ProductPage from "./components/pages/ProductPage";
 import Cartpage from "./components/pages/Cartpage";
 import LoginPage from "./components/pages/LoginPage";
 import RegisterPage from "./components/pages/RegisterPage";
+import ProfilePage from "./components/pages/ProfilePage";
 const App = () => {
   return (
     // <BrowserRouter>
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="/" Component={HomePage} exact />
               <Route path="/login" Component={LoginPage} />
               <Route path="/register" Component={RegisterPage} />
+              <Route path="/profile" Component={ProfilePage} />
               <Route path="/product/:id" Component={ProductPage} />
               <Route path="/cart/:id?" Component={Cartpage} />
             </Routes>
